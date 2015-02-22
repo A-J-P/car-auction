@@ -1,0 +1,22 @@
+Appendix
+Variable&Description
+Is Bad Buy: Is it a bad buy? (Yes=1, No=0)
+Auction: Auction provider at which the vehicle was purchased
+Vehicle Age: The years elapsed since the manufacturers year
+Door: Vehicle door
+Color: Vehicle color
+Transmission: Automatic or manual
+Wheel Type: Vehicle wheel type
+VehOdo: The vehicles odometer reading
+Size: The size category of the vehicle
+Top Three American Names: The top three American manufacturers: Ford, Chrysler, General
+Motor
+MMR Acquisition Auction Average Price: Acquisition price for this vehicle in average condition
+at time of purchase
+MMR Acquisition Retail Clean Price: Acquisition price for this vehicle in the retail market in
+the above average condition at time of purchase
+PGProt: This is a recoded variable, we use MMR Acquisition Retail Clean Price minus MMR
+Acquisition Auction Average Price to create the predicted gross prot of the transaction
+State: State where the car was purchased
+Is Online Sale: If the vehicle was originally purchased online. (Yes=1, No=0)
+Warranty Cost: Warranty price (term=16 month, millage=36,000)

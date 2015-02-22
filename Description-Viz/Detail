@@ -1,0 +1,41 @@
+===
+list of variables used
+IsBadBuy, Auction, VehicleAge, Door, Color, Transmission, WheelType, VehOdo, Size,TopThreeAmericanName,
+VNST, VehBCost, IsOnlineSale, PGProt andWarrantyCost.
+
+===
+
+
+CAD<-read.csv("MA710DATA.CSV",head=TRUE,sep=",")
+CAD = CAD[complete.cases(CAD),]
+CAD=as.data.frame(CAD)
+
+
+str(CAD)
+head(CAD,2)
+
+xtabs(data=CAD, formula=~IsBadBuy)
+summary(CAD$VehBCost)
+
+CADE=CAD
+CADE$IsBadBuy = factor(CADE$IsBadBuy) # target variable converstion to factor 
+
+==
+Data Viz
+===
+Relationship between VechOdo(mileage) and IsBadBuy
+qplot(data=CADE, x=VehOdo, facets=.~IsBadBuy, fill=IsBadBuy, binwidth=3677)
+
+Relationship between VechicleAge,Transmission, and IsBadBuy
+qplot(x = IsBadBuy, y = VehicleAge, data = CADE,facets=WheelType~IsBadBuy, geom = "boxplot")
+
+Relationship between TopThreeAmericanName and IsBadBuy
+mosaic(formula=IsBadBuy~TopThreeAmericanName, data=CADE)
+
+Relationship between VehicleAge and IsBadBuy
+qplot(data=CADE,x=Door,y=VehicleAge, facets=~IsBadBuy,color=IsBadBuy)
+
+
+
+
+

@@ -1,0 +1,20 @@
+
+#Data file  
+
+CAD<-read.csv("MA710DATA.CSV",head=TRUE,sep=",")
+CAD = CAD[complete.cases(CAD),]
+CAD=as.data.frame(CAD)
+
+#packages 
+
+for data viz
+library(ggplot2) 
+
+
+library(vcd)  
+library(rpart) 
+library(party)
+library(maptree)
+library(caret)
+library(cluster)
+library(lattice)

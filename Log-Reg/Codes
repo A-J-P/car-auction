@@ -1,0 +1,27 @@
+=
+renamed the file to CADL
+
+CADL <- glm(IsBadBuy ~ Auction+VehicleAge +Door+Color+Transmission+WheelType+
+VehOdo+Size +PGProfit+IsOnlineSale+TopThreeAmericanName+VNST
++WarrantyCost+VehBCost, data=CAD, family="binomial")
+
+summary(CADL)
+
+==
+Further exploration with significant variable based on p-values. 
+
+1st iteration on signicant variables
+
+CADLt1 <- glm(IsBadBuy ~ Auction + VehicleAge +VehBCost +
+TopThreeAmericanName+ VehOdo + PGProfit+WarrantyCost,
+data = CAD, family = "binomial")
+
+summary(CADLt1)
+
+2nd iteration on signicant variables
+
+CADLt2 <- glm(IsBadBuy ~ Auction + VehicleAge +VehBCost+
+TopThreeAmericanName+ VehOdo + PGProfit,
+data = CAD , family = "binomial")
+
+summary(CADLt2)

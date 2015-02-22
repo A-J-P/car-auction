@@ -24,3 +24,16 @@ print(CADE.ctree)
 
 plot(CADE.ctree)
 
+========
+CADE.pred = predict(object=CADE.ctree,
+newdata=CADE,type=response)
+CADE.train.pred = predict(object=CADE.ctree,
+newdata=CADE.train,type=response)
+CADE.test.pred = predict(object=CADE.ctree,
+newdata=CADE.test,type=response)
+confusionMatrix(data=CADE.pred,reference=CADE$IsBadBuy,positive=0)
+
+confusionMatrix(data=CADE.train.pred,reference=CADE.train$IsBadBuy,positive=0)
+confusionMatrix(data=CADE.test.pred,14reference=CADE.test$IsBadBuy,positive=0)
+
+

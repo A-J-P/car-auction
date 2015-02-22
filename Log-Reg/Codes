@@ -25,3 +25,11 @@ TopThreeAmericanName+ VehOdo + PGProfit,
 data = CAD , family = "binomial")
 
 summary(CADLt2)
+
+=======
+exp(coef(CADLt2))
+
+hosmer test
+hoslem.test(CAD$IsBadBuy,fitted(CADLt2))
+
+rocplot(CADLt2)

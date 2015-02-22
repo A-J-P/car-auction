@@ -1,0 +1,26 @@
+==
+conversion of IsBadbuy, numeric, to factor
+
+CADE=CAD
+CADE$IsBadBuy = factor(CADE$IsBadBuy)
+
+==
+trainig/test set
+
+ndxTrain = sample(x=nrow(CADE),
+size=0.7*nrow(CADE))
+CADE.train = CADE[ndxTrain, ]
+CADE.test = CADE[-ndxTrain, ]
+
+==
+output
+
+CADE.formula = IsBadBuy ~ Auction+VehicleAge+Door+Color+
+Transmission+WheelType+VehOdo+
+TopThreeAmericanName+PGProfit+VehBCost+IsOnlineSale+ WarrantyCost
+CADE.ctree = ctree(data=CADE, formula=CADE.formula,
+control=ctree_control(maxdepth=3))
+print(CADE.ctree)
+
+plot(CADE.ctree)
+

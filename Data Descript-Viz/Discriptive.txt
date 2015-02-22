@@ -1,0 +1,6 @@
+CAD<-read.csv("MA710DATA.CSV",head=TRUE,sep=",")
+CAD = CAD[complete.cases(CAD),]
+CAD=as.data.frame(CAD)
+
+===
+str(CAD)

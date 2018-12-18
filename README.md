@@ -1,10 +1,6 @@
 # car-auction
 analyze if a car bought at auction is lemon
 
-
-#MATH710 Class project - Bentley University/Business Analytics Program
-
-
 Intro:  
   Car purchase is always a headache issue for car buyers, especially for people who plan to buy used car.
 Second-hand car buyers would try to research the cars information before purchase to avoid buying

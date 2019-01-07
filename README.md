@@ -1,7 +1,7 @@
 # Is my car a lemon?
-analyze if a car bought at auction is lemon
+### analyze if a car bought at auction is lemon
 
-Introduction:  
+## Introduction:  
   Car purchase is always a headache issue for car buyers, especially for people who plan to buy used car.
 Second-hand car buyers would try to research the cars information before purchase to avoid buying
 bad cars. The same situation happens to auto dealers.Car dealers buy used cars through auctions or
@@ -12,7 +12,7 @@ are tampered odometers, mechanical issues the dealer is not able to address, iss
 vehicle title from the seller, or some other unforeseen problems. Kick cars can be very costly to dealers
 after transportation cost, throwaway repair work, and market losses in reselling the vehicle.
 
-Purpose:  
+## Purpose:  
   The purpose of this project is to identify if a car bought a acution is lemon. The object of this report is
 to anayze the data provided by Carvana to predict if the used car purchased at the Auction is a Kick (bad buy),
 which can be used in the future purchase to lower the risk of buying cars from auctions. To be specific, we want 
